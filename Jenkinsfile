@@ -1,10 +1,8 @@
 
 node {
     
-    tools {
-        maven 'maven-3.6.3'
-        jdk 'jdk-1.11'
-    }
+    tool name: 'maven-3.6.3', type: 'maven'
+    tool name: 'jdk-1.11', type: 'jdk'
 
     stage("Git Clone"){
 
