@@ -3,7 +3,7 @@ node {
 
     stage("Git Clone"){
 
-        git credentialsId: 'GIT_HUB_CREDENTIALS', url: ''
+        git branch: 'main', url: 'https://github.com/nalajala9/spring_on_eks.git'
     }
 
      stage('Maven Build') {
